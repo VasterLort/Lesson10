@@ -84,21 +84,6 @@ public class Work {
 		return select;
 	}
 	
-	private void writeFile() {
-		try(FileWriter writer = new FileWriter("D:/Java/Eclipse/workspace/Test/T.txt", false))
-        {
-           // запись всей строки
-            String text = "H";
-            writer.write(text);
-             
-            writer.flush();
-        }
-        catch(IOException ex){
-             
-            System.out.println(ex.getMessage());
-        } 
-	}
-	
 	private StringBuffer readFile() {
 		StringBuffer s = new StringBuffer();
 		try(FileReader reader = new FileReader("D:/Java/Eclipse/workspace/Test/Test.txt"))
